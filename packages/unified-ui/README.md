@@ -1,6 +1,6 @@
 # @work-rjkashyap/unified-ui
 
-> A scalable, token-driven React design system with 23+ components, built with Tailwind CSS v4, Radix UI, and Framer Motion.
+> A scalable, token-driven React design system with 75+ components, built with Tailwind CSS v4, Radix UI, and Framer Motion.
 
 [![npm version](https://img.shields.io/npm/v/@work-rjkashyap/unified-ui)](https://www.npmjs.com/package/@work-rjkashyap/unified-ui)
 [![npm downloads](https://img.shields.io/npm/dm/@work-rjkashyap/unified-ui)](https://www.npmjs.com/package/@work-rjkashyap/unified-ui)
@@ -13,7 +13,7 @@
 ## Features
 
 - **Token-driven** — Every color, spacing, radius, shadow, and motion value flows from a single source of truth
-- **23+ components** — Production-ready composites built on Radix UI primitives
+- **75+ components** — Production-ready composites built on Radix UI primitives
 - **Tailwind CSS v4** — First-class integration via `@theme` with direct utility classes
 - **Framer Motion** — Consistent animation presets with `prefers-reduced-motion` support
 - **Accessible** — WCAG AA contrast, keyboard navigation, ARIA attributes, and focus management
@@ -198,7 +198,7 @@ Foundational UI building blocks:
 
 ### Layer 4 — Components (`components/`)
 
-23 production-ready composite components:
+75+ production-ready composite components including:
 
 | Component      | Component       | Component      |
 | -------------- | --------------- | -------------- |
@@ -209,7 +209,10 @@ Foundational UI building blocks:
 | Breadcrumb     | Popover         | Table          |
 | Button         | Radio           | Tabs           |
 | Card           | Checkbox        | Textarea       |
-| DataTable      |                 | Toast / Tooltip|
+| DataTable      | Calendar        | Toast / Tooltip|
+| Combobox       | DatePicker      | Sidebar        |
+| Command        | ColorPicker     | TreeView       |
+| Carousel       | FileUpload      | VideoPlayer    |
 
 ### Layer 5 — Motion (`motion/`)
 
@@ -283,7 +286,7 @@ The package provides 7 independently importable entry points for optimal tree-sh
 | Tokens      | `@work-rjkashyap/unified-ui/tokens`     | Design tokens (pure JS, no React) |
 | Theme       | `@work-rjkashyap/unified-ui/theme`      | Theme provider, contract, hooks   |
 | Primitives  | `@work-rjkashyap/unified-ui/primitives` | Typography, Layout, Divider       |
-| Components  | `@work-rjkashyap/unified-ui/components` | All 23 composite components       |
+| Components  | `@work-rjkashyap/unified-ui/components` | All 75+ composite components      |
 | Motion      | `@work-rjkashyap/unified-ui/motion`     | Animation presets and utilities    |
 | Utils       | `@work-rjkashyap/unified-ui/utils`      | cn, mergeSlots, contrast, etc.    |
 | CSS         | `@work-rjkashyap/unified-ui/styles.css` | Tailwind @theme + CSS variables   |
@@ -344,7 +347,7 @@ Check the installed version programmatically:
 
 ```tsx
 import { UNIFIED_UI_VERSION } from "@work-rjkashyap/unified-ui";
-console.log(UNIFIED_UI_VERSION); // "0.1.1"
+console.log(UNIFIED_UI_VERSION); // "0.3.7"
 ```
 
 ---

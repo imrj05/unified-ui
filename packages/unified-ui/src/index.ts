@@ -25,7 +25,7 @@
 // ============================================================================
 
 /** Current version of the Unified UI design system. */
-export const UNIFIED_UI_VERSION = "0.3.1" as const;
+export const UNIFIED_UI_VERSION = "0.3.7" as const;
 
 export {
   Accordion,

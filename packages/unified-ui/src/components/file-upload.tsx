@@ -428,7 +428,6 @@ export const FileUpload = forwardRef<HTMLDivElement, FileUploadProps>(
                   {/* Thumbnail / icon */}
                   <div className="shrink-0 size-10 rounded-md overflow-hidden bg-muted flex items-center justify-center">
                     {item.preview ? (
-                      // eslint-disable-next-line @next/next/no-img-element
                       <img
                         src={item.preview}
                         alt={item.file.name}
@@ -456,7 +455,14 @@ export const FileUpload = forwardRef<HTMLDivElement, FileUploadProps>(
                     {/* Progress bar */}
                     {item.status === "uploading" &&
                       item.progress !== undefined && (
-                        <div className="mt-1.5 w-full h-1 bg-muted rounded-full overflow-hidden">
+                        <div
+                          className="mt-1.5 w-full h-1 bg-muted rounded-full overflow-hidden"
+                          role="progressbar"
+                          aria-valuenow={item.progress}
+                          aria-valuemin={0}
+                          aria-valuemax={100}
+                          aria-label={`Upload progress: ${item.progress}%`}
+                        >
                           <motion.div
                             className="h-full bg-primary rounded-full"
                             initial={{ width: "0%" }}

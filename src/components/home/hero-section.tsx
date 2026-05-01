@@ -331,7 +331,7 @@ const stats = [
 const installCmd = "npm i @work-rjkashyap/unified-ui";
 const cliCmd = "npx @work-rjkashyap/unified-ui add button";
 
-export function HeroSection({ version = "0.3.1" }: { version?: string }) {
+export function HeroSection({ version = "0.3.7" }: { version?: string }) {
   return (
     <TooltipProvider delayDuration={300}>
       <section className="relative overflow-hidden">

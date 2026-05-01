@@ -116,6 +116,7 @@ export const TimelineItem = forwardRef<HTMLDivElement, TimelineItemProps>(
         transition={
           animated && !shouldReduce ? slidePreset.transition : undefined
         }
+        role="listitem"
         data-ds-animated={animated ? "" : undefined}
         {...rest}
       >
@@ -200,6 +201,8 @@ export const Timeline = forwardRef<HTMLDivElement, TimelineProps>(
         }
         initial={animated && !shouldReduce ? "initial" : undefined}
         animate={animated && !shouldReduce ? "animate" : undefined}
+        role="list"
+        aria-label="Timeline"
         data-ds=""
         data-ds-component="timeline"
         data-ds-align={align}

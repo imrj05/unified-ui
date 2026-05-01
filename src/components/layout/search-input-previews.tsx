@@ -27,7 +27,7 @@ export function SearchInputDebouncedPreview() {
       <SearchInput
         placeholder="Type to search..."
         debounce={400}
-        onDebouncedChange={(value) => console.log("Debounced:", value)}
+        onDebouncedChange={() => {}}
       />
     </div>
   );

@@ -189,7 +189,7 @@ function StepCard({
 /*  Main export                                                        */
 /* ------------------------------------------------------------------ */
 
-export function CTASection({ version = "0.3.4" }: { version?: string }) {
+export function CTASection({ version = "0.3.7" }: { version?: string }) {
   return (
     <section className="relative py-14 bg-fd-background overflow-hidden">
       {/* Subtle top glow */}

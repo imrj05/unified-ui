@@ -192,18 +192,6 @@
     "tailwindcss": {
       "optional": true
     },
-    "radix-ui": {
-      "optional": false
-    },
-    "class-variance-authority": {
-      "optional": false
-    },
-    "clsx": {
-      "optional": false
-    },
-    "tailwind-merge": {
-      "optional": false
-    },
     "sonner": {
       "optional": true
     },
@@ -211,54 +199,6 @@
       "optional": true
     },
     "react-resizable-panels": {
-      "optional": true
-    },
-    "@radix-ui/primitive": {
-      "optional": true
-    },
-    "@radix-ui/react-compose-refs": {
-      "optional": true
-    },
-    "@radix-ui/react-context": {
-      "optional": true
-    },
-    "@radix-ui/react-dismissable-layer": {
-      "optional": true
-    },
-    "@radix-ui/react-popper": {
-      "optional": true
-    },
-    "@radix-ui/react-portal": {
-      "optional": true
-    },
-    "@radix-ui/react-presence": {
-      "optional": true
-    },
-    "@radix-ui/react-primitive": {
-      "optional": true
-    },
-    "@radix-ui/react-slot": {
-      "optional": true
-    },
-    "@radix-ui/react-tooltip": {
-      "optional": true
-    },
-    "@radix-ui/react-use-callback-ref": {
-      "optional": true
-    },
-    "@radix-ui/react-use-controllable-state": {
-      "optional": true
-    },
-    "@radix-ui/react-use-layout-effect": {
-      "optional": true
-    },
-    "@radix-ui/react-use-size": {
-      "optional": true
-    },
-    "@radix-ui/react-use-effect-event": {
-      "optional": true
-    },
-    "@radix-ui/react-visually-hidden": {
       "optional": true
     }
   },
@@ -272,8 +212,8 @@
     "vaul": ">=1.0.0"
   },
   "optionalDependencies": {
-    "@tanstack/react-table": ">=8.0.0",
-    "framer-motion": ">=12.0.0"
+    "@tanstack/react-table": "^8.0.0",
+    "framer-motion": "^12.0.0"
   },
   "devDependencies": {
     "@tanstack/react-table": "^8.21.3",
