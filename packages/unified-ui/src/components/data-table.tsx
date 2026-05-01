@@ -1573,7 +1573,6 @@ export const DataTable = forwardRef<HTMLDivElement, DataTableProps<any>>(
 
     // -- Initialize TanStack Table ------------------------------------------
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any -- forwardRef forces `any` generics; the outer cast restores type safety for consumers
     const table = useReactTable<any>({
       data,
       columns,

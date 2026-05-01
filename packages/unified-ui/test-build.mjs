@@ -78,14 +78,14 @@ assertExports("index", index, [
   "easing",
 ]);
 assert(
-  "index: UNIFIED_UI_VERSION is '0.1.0'",
-  index.UNIFIED_UI_VERSION === "0.1.0",
+  "index: UNIFIED_UI_VERSION is '0.3.7'",
+  index.UNIFIED_UI_VERSION === "0.3.7",
 );
 console.log();
 
 // --- Tokens ---
 console.log("  [tokens]");
-const tokens = await import(join(__dirname, "dist/tokens.mjs"));
+const tokens = await import(join(__dirname, "dist/tokens/index.mjs"));
 assertExports("tokens", tokens, [
   "spacing",
   "radius",
@@ -116,7 +116,7 @@ console.log();
 
 // --- Theme ---
 console.log("  [theme]");
-const theme = await import(join(__dirname, "dist/theme.mjs"));
+const theme = await import(join(__dirname, "dist/theme/index.mjs"));
 assertExports("theme", theme, [
   "contract",
   "cssVar",
@@ -139,7 +139,7 @@ console.log();
 
 // --- Primitives ---
 console.log("  [primitives]");
-const primitives = await import(join(__dirname, "dist/primitives.mjs"));
+const primitives = await import(join(__dirname, "dist/primitives/index.mjs"));
 assertExports("primitives", primitives, [
   "Typography",
   "Heading",
@@ -168,7 +168,7 @@ console.log();
 
 // --- Components ---
 console.log("  [components]");
-const components = await import(join(__dirname, "dist/components.mjs"));
+const components = await import(join(__dirname, "dist/components/index.mjs"));
 assertExports("components", components, [
   "Button",
   "buttonVariants",
@@ -237,7 +237,7 @@ console.log();
 
 // --- Motion ---
 console.log("  [motion]");
-const motion = await import(join(__dirname, "dist/motion.mjs"));
+const motion = await import(join(__dirname, "dist/motion/index.mjs"));
 assertExports("motion", motion, [
   "fadeIn",
   "fadeInFast",
@@ -291,7 +291,7 @@ console.log();
 
 // --- Utils ---
 console.log("  [utils]");
-const utils = await import(join(__dirname, "dist/utils.mjs"));
+const utils = await import(join(__dirname, "dist/utils/index.mjs"));
 assertExports("utils", utils, [
   "cn",
   "mergeSlots",
@@ -341,12 +341,12 @@ console.log();
 
 const cjsEntries = [
   "index",
-  "tokens",
-  "theme",
-  "primitives",
-  "components",
-  "motion",
-  "utils",
+  "tokens/index",
+  "theme/index",
+  "primitives/index",
+  "components/index",
+  "motion/index",
+  "utils/index",
 ];
 for (const entry of cjsEntries) {
   try {

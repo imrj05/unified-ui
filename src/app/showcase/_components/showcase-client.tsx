@@ -9,7 +9,7 @@ import { HomeLayout } from "@/components/layout/home";
 import { Nav } from "@/components/layout/nav";
 import { cn } from "@/lib/cn";
 
-const SHOCASE_PROJECTS = [
+const SHOWCASE_PROJECTS = [
   {
     title: "Nebula Dashboard",
     category: "Enterprise",
@@ -75,8 +75,8 @@ export default function ShowcaseClient() {
   const [activeFilter, setActiveFilter] = useState("All Products");
   const filteredProjects =
     activeFilter === "All Products"
-      ? SHOCASE_PROJECTS
-      : SHOCASE_PROJECTS.filter((p) => p.category === activeFilter);
+      ? SHOWCASE_PROJECTS
+      : SHOWCASE_PROJECTS.filter((p) => p.category === activeFilter);
   return (
     <HomeLayout
       {...baseOptions}

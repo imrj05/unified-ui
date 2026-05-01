@@ -22,6 +22,7 @@ biome.json
 node_modules/
 .turbo/
 .next/
+metafile-*.json
 
 # OS files
 .DS_Store

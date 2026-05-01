@@ -727,7 +727,7 @@ export const Combobox = forwardRef<HTMLButtonElement, ComboboxProps>(
               {clearable && hasValue && (
                 <span
                   role="button"
-                  tabIndex={-1}
+                  tabIndex={0}
                   onClick={handleClear}
                   onKeyDown={(e) => {
                     if (e.key === "Enter" || e.key === " ") {
