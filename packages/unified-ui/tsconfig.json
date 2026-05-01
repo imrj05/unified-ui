@@ -17,6 +17,7 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
+    "types": ["@testing-library/jest-dom"],
     "paths": {
       "@unified-ui": ["./src/index.ts"],
       "@unified-ui/*": ["./src/*"]
